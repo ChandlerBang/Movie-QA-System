@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+			
+<link href="static/css/circles.css" rel="stylesheet" type="text/css" media="all" /><!-- circles-css --><!-- for skills section-->
+		
+<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/font-awesome.css" rel="stylesheet">
+<link href="static/css/style000.css" rel="stylesheet" type="text/css" media="all" />
+	
+	<!-- light-box -->
+	<link rel="stylesheet" href="static/css/poposlides.css">
+	<!-- //light-box -->
+
+<!--fonts-->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+<!--//fonts-->
+
+</head>
+<body>
+<!-- banner -->
+<div class="main_agileits">
+		<div class="agile_wthree_nav">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					<h1><a class="navbar-brand" href=""><span><i class="fa fa-desktop" aria-hidden="true"></i></span>Movies</a></h1>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="link-effect-8" id="link-effect-8">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="http://118.25.74.160/">Home</a></li>
+							<li><a href="#about" class="scroll">Details</a></li>
+							<li><a href="#services" class="scroll">Questions</a></li>
+							<li><a href="#team" class="scroll">About Me</a></li>
+							<li><a href="#skills" class="scroll">Skills</a></li>
+							<li><a href="#contact" class="scroll">Contact Me</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="agile_search">
+					<!-- cd-search -->
+					<div class="cd-main-header">
+						<ul class="cd-header-buttons">
+							<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+						</ul>
+						<!-- cd-header-buttons -->
+					</div>
+					<div id="cd-search" class="cd-search agileinfo">
+						<form action="/search" method="post">
+							<input name="Search" type="search" placeholder="Click enter after typing...">
+						</form>
+					</div>
+					<!-- //cd-search -->
+				</div>
+			</nav>
+
+		</div>
+
+		<div class="s1">
+			<h3>Movies</h3>
+			<p>This is a simple question answering and recommender system on movies.</p>
+			<p>You can ask anything about movies here. ^_^ </p>
+			<p>But since our database is limited, you may not get what you want.</p>
+			<div class="w3-button">
+				<div class="w3ls-button">
+					<a href="#contact" class="hvr-shutter-out-vertical">Contact Me</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+		</div>
+
+		<div class="slides-box">
+			<ul class="slides">
+				<li style="background: url(static/images/banner2.jpg) center"></li>
+				<li style="background: url(static/images/banner4.jpg) center"></li>
+				<li style="background: url(static/images/banner1.jpg) center"></li>
+				<li style="background: url(static/images/banner3.jpg) center"></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /banner -->
+<!-- about -->
+	<div class="about" id="about">
+		<div class="container">
+			<h3 class="w3_head w3_head1">Details </h3>
+			<p class="toppara">This is a movie QA/recommender system based on knowledge graph, which uses the graph database Neo4j to deal with query faster. With basic natural language processing skills, the system can give an answer to the user's question. Since in this project I did not crawl large-scale data, the content of the database is very limited and the dataset mainly contains domestically produced old movies. So dear friends, don't be angry if you don't get the answer you want... </p>
+			<div class="aboutgrids">
+				<div class="col-md-6 aboutleft">
+					<h4>Implementation Steps</h4>
+					<div>1) Crawl movie data from www.douban.com and save the data to the mysql database. 
+						2) Import mysql data into the neo4j database to build a knowledge graph. (Better to directly store the data in neo4j after crawling the data. Here I just wanted to get familiar with both of the two databases) 3) Do Chinese Word Segmentation and named entity recognition of user input statements. 4) Then classify user's question.
+						5) According to the classification result, search the answer in the graph database.  
+						6) As for the recommendation, I used node2vec to get node embeddings and calculated the similarity matrix.<br></div>
+
+					<div class="about-inner">
+						<div class="about-inner-top">
+							<div class="col-md-2">
+								<i class="fa fa-database" aria-hidden="true"></i>
+							</div>
+							<div class="col-md-10">
+								<h4>Mysql Database</h4>
+								<p>MySQL is a very popular relational database management system.
+								   It has an advantage of easy operation and fast storage, but not as fast as non-relational databases.
+								</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="about-inner-bottom">
+							<div class="col-md-10">
+								<h4>Neo4j graph database</h4>
+								<p>Neo4j is a non-relational database that stores data as vertices and edges,
+									and it's ideal for knowledge graph,<br> with efficient query performance.</p>
+							</div>
+							<div class="col-md-2">
+								<i class="fa fa-database" aria-hidden="true"></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 aboutright">
+					<img src="static/images/banner.png" alt="graph" align=right/  style="position:absolute; top:100px; ">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+<!-- //about -->
+
+<!-- services -->
+	<div class="services" id="services">
+		<div class="container">
+			<h3 class="w3_head w3_head1">Input Here</h3>
+			<p class="toppara">
+				<b>（页面最右上角端也可以提问/搜索）</b><br>
+				<b>在下方输入你的问题，会返回对应的答案以及相应的推荐<br>
+				支持的问题实例有以下几种<br>“功夫的演员都有谁啊？”<br>“章子怡小姐姐演过的电影”<br>
+				“某电影的评分”（也有可能该部电影没评分）<br>
+				"xx电影是什么类型的片子"<br>
+				“巩俐演过什么电影”<br>
+				“某电影的简介”<br>
+				“千王之王 2000是什么题材的电影啊？”<br>
+				<b>这个系统还不尽完善，支持的问题种类有限，名字打错也无法识别(毕竟没有用语料库训练)</b><br>
+				<b>希望各位朋友多多指教</b>
+			</p>
+		</div>
+		<div>
+			<form action="/search" method="post" style=" text-align:center;">
+				<p><textarea name="Search" clos="50" rows="5" ></textarea></p>
+                <p><br></p>
+				<p><button type="submit">Search</button></p>
+				<p><br></p>
+              </form>
+		</div>
+		<div class="agileits_services_grids_bottom">
+			<div class="container">
+				<div class="col-md-4 agileits_service_grid_btm_left">
+					<div class="agileits_service_grid_btm_left1">
+
+						<div class="agileits_service_grid_btm_left2">
+							<h5>电影种类 <span class="fa fa-suitcase"></span></h5>
+							<p><pre> 冒险<br> 奇幻<br> 动画<br> 剧情<br> 恐怖<br> 动作<br> 喜剧</pre><pre> 历史<br> 西部<br> 惊悚 <br> 犯罪<br> 记录<br> 科幻</pre> <pre> 悬疑<br> 音乐<br> 爱情<br> 家庭<br> 战争<br> 电视电影</pre>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 agileits_service_grid_btm_left">
+					<div class="agileits_service_grid_btm_left1">
+
+						<div class="agileits_service_grid_btm_left2">
+							<h5>部分电影名称<span class="fa fa-building"></span></h5>
+							<p>英雄，卧虎藏龙，花样年华，2046，满城尽带黄金甲，巴尔扎克与小裁缝，风云雄霸天下，暗战，最佳拍档，新最佳拍档，色‧戒，文雀，霍元甲，我是谁，一半海水一半火焰，倩女幽魂III：道道道，倩女幽魂II人间道，警察故事，饺子，警察故事4之简单任务，黑侠，功夫，十面埋伏，全职杀手，福星高照，小白龙情海翻波，韩城攻略，霹雳火，荆轲刺秦王，大红灯笼高高挂，饮食男女，黄飞鸿，黄飞鸿之二男儿当自强，黄飞鸿之三狮王争霸，黄飞鸿之西域雄狮，一个好人，七剑，警察故事续集，无间道，喋血双雄，倚天屠龙记之魔教教主，赤裸特工，琉璃樽，龙兄虎弟，飞鹰计划，霸王别姬，重庆森林，警察故事III：超级警察，太极张三丰，城市猎人，快餐车，堕落天使，醉拳，英雄本色，盲井，蛇形刁手，千禧曼波，最好的时光，师弟出马，新警察故事，无间道II，精武门，少林足球</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 agileits_service_grid_btm_left">
+					<div class="agileits_service_grid_btm_left1">
+
+						<div class="agileits_service_grid_btm_left2">
+							<h5>部分演员列表 <span class="fa fa-cubes"></span></h5>
+							<p>巩俐,乔宏,李连杰,梁朝伟,张曼玉,章子怡,甄子丹,周润发,鲍德熹,曾江,吴宇森,张耀扬,成龙,袁和平,任达华,陈凯歌,张柏芝,刘烨,王文隽,郭富城,杨恭如,舒淇,方中信,杜琪峰,张学友,刘德华,林雪,曾志伟,许冠杰,林子祥,刘家良,陈雅伦,李修贤,黄锦 燊,潘恒生,林熙蕾,锺丽缇,黄霑,林青霞,梁家辉,周星驰,元华,莫文蔚,洪金宝,黄炳耀,吴耀汉,胡慧中,林正英,吴镇宇,任贤齐, 陈国新,袁咏仪,谷德昭,梁咏琪,姜大卫,关之琳,莫少聪,黄秋生,黎明,张敏,邱淑贞,黎姿,程小东,谭咏麟,王祖贤,葛民辉,林海峰,温翠苹,邬君梅,张国荣,吴孟达,陈欣健,罗烈,徐少强,陈德森,王宝强,张家辉,孙红雷,李滨,张雨绮,葛优,王学圻,赵薇,吕良伟,徐玟晴,萧芳芳,郑少秋,陈惠敏,张卫健,刘松仁,徐锦江,黄圣依,罗美薇,柯受良,惠英红,叶德娴,朱茵,罗行堂,蔡少芬,陈观泰,吴君如,苑琼丹,洪欣,楚原,刘仪伟,胡军,张涵予,邓超,金燕玲,向华强,汤镇业,杨群,冯小刚</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //services -->
+
+<!-- team -->
+	<div class="team" id="team">
+		<div class="container">
+			<h3 class="w3_head w3_head1">About Me</h3>
+			<p class="toppara">
+				金卫，电气工程学院<br>
+				花了挺长时间来做这个project，收获还是有不少的,<br>
+				爬虫，前端，后端，NLP, Graph Embedding全部摸了一遍.<br>
+				不过问答功能还是非常受限的，我没有做word embedding，也没用deep learning<br>
+				要想效果好还是得用非常大的语料库做embedding然后用LSTM提高分类效果<br>
+				推荐系统部分只是初学，用的方法还比较简单<br>
+				不过只要能在学习的过程中不断进步我就很满意啦！<br></p>
+			<img src="static/images/mememe.jpg" />
+		</div>
+	</div>
+<!-- team -->
+
+<!-- coding skills -->
+						<div class="w3ls_agile_circle_progress agile_info_shadow" id="skills">
+							<div class="container">
+								<div class="cir_agile_info ">
+									<h3 class="w3_head w3_head1">KEY SKILLS </h3>
+									<h4 align="center">key skills used in this project</h4>
+										  <p align="center"><br>Python<br>
+										  Mysql<br>Neo4j<br>javascript<br>css<br>WSGI<br>
+										  Natural Language Processing<br>
+										  Graph Embedding<br></p>
+
+										
+								</div>
+							</div>
+							</div>
+						</div>
+<!-- //coding skills --> 
+
+<!-- contact -->
+<div id="contact" class="contact">
+	<div class="container">
+		<div class="tittle-agileinfo">
+			<h3 class="w3_head w3_head1">Contact Me </h3>
+			<p class="toppara">欢迎微信/QQ/邮箱交流<br>Please email me at jvv@zju.edu.cn</p>
+	</div>
+</div>
+<!-- //contact -->
+
+
+<!-- js -->
+<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+
+<!-- banner js -->
+<script src="static/js/search.js"></script>
+	<script src="static/js/poposlides.js">
+	</script>
+	<script>
+		$(".slides").poposlides();
+	</script>
+<!-- //banner js -->
+
+<!--pop-up-grid-->
+		<div id="popup">
+			<div id="small-dialog" class="mfp-hide">
+				<div class="signin-form profile">
+					<h3>Sign Up</h3>
+					
+					<div class="login-form">
+						<form action="#" method="post">
+							<input type="text" name="name" placeholder="Name" required="">
+							<input type="email" name="email" placeholder="E-mail" required="">
+							<input type="text" name="phone" placeholder="Phone number" required="">
+							<input type="password" name="password" placeholder="Password" required="">
+							<input type="password" name="password" placeholder="Confirm Password" required="">
+							<input type="submit" value="Sign Up">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>						
+		<!--pop-up-grid-->
+		<script src="static/js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+																							
+		});
+		</script>
+
+
+
+
+<!-- required-js-files-->
+							<link href="static/css/owl.carousel.css" rel="stylesheet">
+							    <script src="static/js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items :3,
+									itemsDesktop : [768,2],
+									itemsDesktopSmall : [414,1],
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation :true,
+									
+							        navigationText :  false,
+							        pagination : true,
+									
+							      });
+								  
+							    });
+							    </script>
+								 <!--//required-js-files-->
+
+
+<!-- /circle-->
+	 <script type="text/javascript" src="static/js/circles.js"></script>
+					         <script>
+								var colors = [
+										['none', '#fd9426'], ['#fafafa', '#fc3158'],['#fafafa', '#53d769'], ['#fafafa', '#147efb']
+									];
+								for (var i = 1; i <= 7; i++) {
+									var child = document.getElementById('circles-' + i),
+										percentage = 30 + (i * 10);
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      13,
+										number:   	percentage / 1,
+										text:       '%',
+										colors:     colors[i - 1]
+									});
+								}
+						
+				</script>
+	<!-- //circle -->
+
+<script src="static/js/SmoothScroll.min.js"></script>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="static/js/move-top.js"></script>
+<script type="text/javascript" src="static/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+<!-- move to top-js-files -->
+	<script type="text/javascript" src="static/js/move-top.js"></script>
+	<script type="text/javascript" src="static/js/easing.js"></script>
+<!-- //move to top-js-files -->
+
+
+<script type="text/javascript" src="static/js/bootstrap.js"></script><!-- bootstrap js file -->
+
+</body>
+</html>

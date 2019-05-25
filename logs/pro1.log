@@ -1,0 +1,178 @@
+/^A
+/A
+^A
+Sun, 09 Sep 2018 21:46:40 WARNING  * Debugger is active!
+Sun, 09 Sep 2018 21:47:54 WARNING ====== user ip: 223.104.247.206 ======
+Sun, 09 Sep 2018 21:48:09 WARNING ====== Query: 功夫的演
+ ======
+Sun, 09 Sep 2018 21:48:16 ERROR Exception on /search [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "flask_app.py", line 83, in index2
+    entities,answer = search.get_query_type(query)
+  File "./jw/Q_Search.py", line 82, in get_query_type
+    q_type, entities = test(query)
+  File "./jw/svm_model.py", line 84, in test
+    predictions = model.predict_proba([query_vec])
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 594, in _predict_proba
+    X = self._validate_for_predict(X)
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 459, in _validate_for_predict
+    (n_features, self.shape_fit_[1]))
+ValueError: X.shape[1] = 192 should be equal to 195, the number of features at training time
+Sun, 09 Sep 2018 21:48:26 WARNING ====== Query: 功夫的演�?
+
+ ======
+Sun, 09 Sep 2018 21:48:26 ERROR Exception on /search [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "flask_app.py", line 83, in index2
+    entities,answer = search.get_query_type(query)
+  File "./jw/Q_Search.py", line 82, in get_query_type
+    q_type, entities = test(query)
+  File "./jw/svm_model.py", line 84, in test
+    predictions = model.predict_proba([query_vec])
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 594, in _predict_proba
+    X = self._validate_for_predict(X)
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 459, in _validate_for_predict
+    (n_features, self.shape_fit_[1]))
+ValueError: X.shape[1] = 192 should be equal to 195, the number of features at training time
+Sun, 09 Sep 2018 21:48:33 WARNING ====== Query: 功夫的演�?
+
+ ======
+Sun, 09 Sep 2018 21:48:33 ERROR Exception on /search [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "flask_app.py", line 83, in index2
+    entities,answer = search.get_query_type(query)
+  File "./jw/Q_Search.py", line 82, in get_query_type
+    q_type, entities = test(query)
+  File "./jw/svm_model.py", line 84, in test
+    predictions = model.predict_proba([query_vec])
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 594, in _predict_proba
+    X = self._validate_for_predict(X)
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 459, in _validate_for_predict
+    (n_features, self.shape_fit_[1]))
+ValueError: X.shape[1] = 192 should be equal to 195, the number of features at training time
+Sun, 09 Sep 2018 21:48:46 WARNING ====== Query: 章子怡小姐姐演过的电�?
+
+ ======
+Sun, 09 Sep 2018 21:48:46 ERROR Exception on /search [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "flask_app.py", line 83, in index2
+    entities,answer = search.get_query_type(query)
+  File "./jw/Q_Search.py", line 82, in get_query_type
+    q_type, entities = test(query)
+  File "./jw/svm_model.py", line 84, in test
+    predictions = model.predict_proba([query_vec])
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 594, in _predict_proba
+    X = self._validate_for_predict(X)
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 459, in _validate_for_predict
+    (n_features, self.shape_fit_[1]))
+ValueError: X.shape[1] = 192 should be equal to 195, the number of features at training time
+Sun, 09 Sep 2018 21:48:54 WARNING ====== user ip: 183.192.164.90 ======
+Sun, 09 Sep 2018 21:50:08 WARNING ====== user ip: 223.104.247.206 ======
+Sun, 09 Sep 2018 21:50:13 WARNING  * Debugger is active!
+Sun, 09 Sep 2018 21:50:14 WARNING ====== Query: 章子怡小姐姐演过的电�?======
+Sun, 09 Sep 2018 21:50:17 ERROR Exception on /search [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "flask_app.py", line 83, in index2
+    entities,answer = search.get_query_type(query)
+  File "./jw/Q_Search.py", line 82, in get_query_type
+    q_type, entities = test(query)
+  File "./jw/svm_model.py", line 84, in test
+    predictions = model.predict_proba([query_vec])
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 594, in _predict_proba
+    X = self._validate_for_predict(X)
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 459, in _validate_for_predict
+    (n_features, self.shape_fit_[1]))
+ValueError: X.shape[1] = 192 should be equal to 195, the number of features at training time
+Sun, 09 Sep 2018 21:51:16 WARNING ====== user ip: 223.104.247.206 ======
+Sun, 09 Sep 2018 21:51:18 WARNING  * Debugger is active!
+Sun, 09 Sep 2018 21:51:19 WARNING ====== Query: 章子怡小姐姐演过的电�?======
+Sun, 09 Sep 2018 21:52:21 WARNING  * Debugger is active!
+Sun, 09 Sep 2018 21:52:45 WARNING ====== user ip: 223.104.247.206 ======
+Sun, 09 Sep 2018 21:52:57 WARNING ====== Query: 章子怡小姐姐演过的电�?======
+Sun, 09 Sep 2018 21:53:00 ERROR Exception on /search [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.5/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "flask_app.py", line 83, in index2
+    entities,answer = search.get_query_type(query)
+  File "./jw/Q_Search.py", line 82, in get_query_type
+    q_type, entities = test(query)
+  File "./jw/svm_model.py", line 84, in test
+    predictions = model.predict_proba([query_vec])
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 594, in _predict_proba
+    X = self._validate_for_predict(X)
+  File "/usr/local/lib/python3.5/dist-packages/sklearn/svm/base.py", line 459, in _validate_for_predict
+    (n_features, self.shape_fit_[1]))
+ValueError: X.shape[1] = 192 should be equal to 195, the number of features at training time
+Sun, 09 Sep 2018 21:54:12 WARNING ====== user ip: 223.104.247.206 ======
+Sun, 09 Sep 2018 21:54:13 WARNING  * Debugger is active!
